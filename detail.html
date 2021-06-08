@@ -1,14 +1,19 @@
 <html>
     <head>
 <title>Detail</title>
+<link href="styles/detail.css" rel="stylesheet">
     </head>
     <body>
- <div>
-<div> <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="200px" width="150px"></a>
+ 
+<header> 
+    <a href="index.html"><img id="logo"  src="assests/images/logo.png" alt="logo" height="200px" width="150px"></a>
 <a href="login.html" >Login</a>
-</div>
-<div>
-   <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
+</header>
+<section >
+    <article>
+   <img id="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
+</article>
+<article>
     <form action="payment.html">
         <label>Adults:</label>
         <input type="number" name="Adults" min="1" value="1" step="1"  required><br>
@@ -22,7 +27,8 @@
         <input type="number" disabled><br>
         <button type="submit">Book Now</button>
     </form>
-   
+</article>
+<article>
     <h2>Radisson Blu Hotel</h2>
     <p>RATING</p>
     <p>5 Star</p>
@@ -36,15 +42,22 @@
     </ul><br>
     <h5>DESCRIPTION</h5>
     <p>skfjsifjsfjiofjfjafjifjsojaofjifjaofjsoijsjpaofjvasojasfpoajfpjajfpaojpofjpojaojapofjoapfjapjafajjopjafojafojafjajfpajfjs</p>
-
-</div>
-<div>
+</article>
+</section>
+<article>
+    <footer>
     <a href="contact.html" target="_blank">Contact Us</a><br>
-    <a href="https://www.facebook.com/" target="_blank"> <img src="assests/images/facebook.png" height="20px" width="22px"></a>
-    <a href="https://www.instagram.com/" target="_blank"> <img src="assests/images/instagram.png" height="20px" width="22px"></a>
-    <a href="https://www.twitter.com/" target="_blank"> <img src="assests/images/twitter.png" height="20px" width="22px"></a>
+</article>
+    <article >
+    <a href="https://www.facebook.com/" target="_blank"> <img class="social-media-img" src="assests/images/facebook.png" height="20px" width="22px"></a>
+    <a href="https://www.instagram.com/" target="_blank"> <img class="social-media-img" src="assests/images/instagram.png" height="20px" width="22px"></a>
+    <a href="https://www.twitter.com/" target="_blank"> <img class="social-media-img" src="assests/images/twitter.png" height="20px" width="22px"></a>
+   </article>
+   <article>
+
     <p>&copy;2020 ROOM SEARCH PVT. LTD.</p>
-</div>
-</div>
+   </article>
+</footer>
+
     </body>
 </html>
