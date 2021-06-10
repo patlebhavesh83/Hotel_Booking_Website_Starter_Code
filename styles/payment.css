@@ -1,16 +1,40 @@
-html,body{
+body{
     height: 100%;
     width: 100%;
+    margin: 0px;
+    background-color: #e0e0e0;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
 }
 #logo{
     height: 60px;
     width: 60px;
 }
-#hotel-img{
+#_img{
     height: 500px;
     width: 500px;
+    
 }
-.social-media-img{
+#socialsites{
     height: 20px;
     width: 22px;
+}
+.div1{
+    background-color: rgb(132,136,139);
+    height: 20%;
+    width: 50%;
+    margin: 2% auto;
+}
+.div2{
+    margin: 2%;
+}
+.p{
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
 }

@@ -1,6 +1,11 @@
 html,body{
     height: 100%;
     width: 100%;
+    margin: 0px;
+   
+}
+body{
+    background-color: #e0e0e0;
 }
 #logo{
     height: 60px;
@@ -9,8 +14,22 @@ html,body{
 #hotel-img{
     height: 500px;
     width: 500px;
+    margin: 2% 4% 0% 4%;
+   
 }
 .social-media-img{
     height: 20px;
     width: 22px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}
+#booking-form{
+    margin: 0% 4% 1% 4%;
+}
+#hotel-descrip{
+    margin: 1% 4% 2% 4%;
 }
