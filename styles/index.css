@@ -1,15 +1,31 @@
 html,body{
     height: 100%;
     width: 100%;
-    margin: 0px;
    
 }
 body{
     background-color: #e0e0e0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    position: relative;
+    margin: 0px;
+    font-family: 'Ubuntu',sans-serif;
+
 }
 #logo{
     height: 60px;
     width: 60px;
+    float: left;
+    margin: 0 auto;
+
+}
+#login{
+    float: right;
+   line-height: 60px;
+   padding-right:20px ;
+    text-decoration: none;
+    color: black;
+
 }
 .city-img{
     height: 150px;
@@ -18,15 +34,33 @@ body{
     border-radius: 25%;
    
 }
-.social-media-img{
+#social-media-img{
     height: 20px;
     width: 22px;
+    padding-top: 22px;
+    margin-right: 5px;
 }
-header{
-    background-color: rosybrown;
+.social{
+    text-align:  right;
+    width: 33%;
 }
-footer{
+.header{
     background-color: rosybrown;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    
+}
+.footer{
+    background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 #searchbar-background-img{
 
@@ -37,7 +71,41 @@ background-repeat: no-repeat;
 background-size: cover;
 
 }
+#searchbar{
+   margin:150px 500px ;
+    background-color:#f1f1f1 ;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 25%;
+}
 #city-img{
     margin-left: 15%;
     margin-right: 15%;
 }
+.viewmore{
+   text-align: center;
+}
+#view{
+    text-decoration: none;
+    color: black;
+}
+.contact{
+    
+    margin-left: 10px;
+}
+#us{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+  
+    font-size: 10px;
+    margin-top: 45px;
+    margin-left: 300px;
+
+}
+
+

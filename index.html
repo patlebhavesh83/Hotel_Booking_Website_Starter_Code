@@ -1,22 +1,23 @@
 <!DOCTYPE html>
     <head>
         <title>Index</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="styles\index.css" rel="stylesheet">
     </head>
 
 <body>
         
-    <header>
-            <img id="logo" src="assests\images\logo.png" alt="logo">
-            <a href="login.html">Login</a>
+    <header class="header">
+            <img  id="logo" src="assests\images\logo.png" alt="logo">
+            <a id="login"  href="login.html">Login</a>
     </header>
 
-    <section>
-        <article id="searchbar-background-img">
-            <input type="text" placeholder="City">
-        </article>
+    <section >
+        <div id="searchbar-background-img">
+            <input id="searchbar" type="text" placeholder="City">
+        </div>
            
-        <article id="city-img">
+        <div id="city-img">
 
         <a href="list.html"><img class="city-img"  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="300 px" width="300 px"></a>
 
@@ -26,29 +27,29 @@
 
         <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
 
-        </article>
+        </div>
 
-        <article>
-            <a href="index.html">View more>></a>
-        </article>
+        <div class="viewmore">
+            <a  href="index.html" target="_self" id="view">View more>></a>
+        </div>
     </section>
 
-    <footer>
-        <article>
-            <a href="contact.html">Contact Us</a>
-        </article>
+    <footer class="footer">
+        <div class="contact">
+            <a  href="contact.html" id="us"><span>Contact Us</span></a>
+        </div>
+        <div class="copyright">
+           <span>&copy; 2020 ROOM SEARCH PVT LTD.</span>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img id="social-media-img" src="assests/images/facebook.png"></a>
 
-        <article >
-            <a href="https://www.facebook.com" target="_blank"><img class="social-media-img" src="assests/images/facebook.png"></a>
+            <a href="https://www.instagram.com" target="_blank"><img id="social-media-img" src="assests/images/instagram.png"></a>
 
-            <a href="https://www.instagram.com" target="_blank"><img class="social-media-img" src="assests/images/instagram.png"></a>
+            <a href="https://twitter.com" target="_blank"><img id="social-media-img" src="assests/images/twitter.png"></a>
+        </div>
 
-            <a href="https://twitter.com" target="_blank"><img class="social-media-img" src="assests/images/twitter.png"></a>
-        </article>
-
-        <article>
-            &copy; 2020 ROOM SEARCH PVT LTD.
-        </article>
+       
     </footer>
 
         

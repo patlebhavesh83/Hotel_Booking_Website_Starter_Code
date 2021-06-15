@@ -1,15 +1,31 @@
 html,body{
     height: 100%;
     width: 100%;
-    margin: 0px;
+    
    
 }
 body{
     background-color: #e0e0e0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    position: relative;
+    margin: 0px;
+    font-family: 'Ubuntu',sans-serif;
+
 }
 #logo{
     height: 60px;
     width: 60px;
+    float: left;
+    margin: 0 auto;
+}
+#login{
+    float: right;
+   line-height: 60px;
+   padding-right:20px ;
+    text-decoration: none;
+    color: black;
+
 }
 #hotel-img{
     height: 500px;
@@ -17,19 +33,52 @@ body{
     margin: 2% 4% 0% 4%;
    
 }
-.social-media-img{
+#social-media-img{
     height: 20px;
     width: 22px;
+    padding-top: 22px;
+    margin-right: 5px;
 }
-header{
-    background-color: rosybrown;
+.social{
+    text-align:  right;
+    width: 33%;
 }
-footer{
+.header{
     background-color: rosybrown;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    
+}
+.footer{
+    background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 #booking-form{
     margin: 0% 4% 1% 4%;
 }
 #hotel-descrip{
     margin: 1% 4% 2% 4%;
+}
+.contact{
+    
+    margin-left: 10px;
+}
+#us{
+    text-decoration: none;
+    color: black;
+}
+.copyright{
+  
+    font-size: 10px;
+    margin-top: 45px;
+    margin-left: 300px;
+
 }
