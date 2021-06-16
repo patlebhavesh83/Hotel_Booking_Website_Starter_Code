@@ -1,68 +1,158 @@
+<!DOCTYPE html>
 <html>
-    <head>
-<title>Detail</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-<link href="styles/detail.css" rel="stylesheet">
-    </head>
-    <body>
- 
-        <header class="header">
-            <img  id="logo" src="assests\images\logo.png" alt="logo">
-            <a id="login"  href="login.html">Login</a>
-    </header>
-<section  style="padding-bottom: 50px;">
+  <head>
+    <title>Detail</title>
+    <link rel="stylesheet" href="/styles/detail.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
     <div>
-   <img id="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
-</div>
-<div id="booking-form">
-    <form action="payment.html">
-        <label>Adults:</label>
-        <input type="number" name="Adults" min="1" value="1" step="1" autocomplete="off"  required><br>
-        <label>Name:</label>
-        <input type="text"name="Name" required ><br>
-        <label>From Date:</label>
-        <input type="date"name="From Date" required ><br>
-        <label>To Date:</label>
-        <input type="date"name="To Date" required ><br>
-        <label>Total:</label>
-        <input type="number" disabled><br>
-        <button type="submit">Book Now</button>
-    </form>
-</div>
-<div id="hotel-descrip">
-    <h2>Radisson Blu Hotel</h2>
-    <p>RATING</p>
-    <p>5 Star</p>
-    <p>AMENITIES</p>
-    <ul>
-        <li>Room Services</li>
-        <li>Restaurant</li>
-        <li>Business center</li>
-        <li>Fitness center</li>
-        <li>Pool</li>
-    </ul><br>
-    <h5>DESCRIPTION</h5>
-    <p>skfjsifjsfjiofjfjafjifjsojaofjifjaofjsoijsjpaofjvasojasfpoajfpjajfpaojpofjpojaojapofjoapfjapjafajjopjafojafojafjajfpajfjs</p>
-</div>
-</section>
-<footer class="footer">
-    <div class="contact">
-        <a  href="contact.html" id="us"><span>Contact Us</span></a>
+      <header>
+        <div class="header">
+          <a href="index.html"
+            ><img src="assests/images/logo.png" id="logo"
+          /></a>
+
+          <a href="login.html" target="_self" id="login"><span>Login</span></a>
+        </div>
+      </header>
+      <article>
+        <section>
+          <div class="container">
+            <div class="img">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                id="_img"
+              />
+            </div>
+            <div class="vl"></div>
+            <div style="margin-top: 15px">
+              <form action="payment.html" target="_self" method="GET">
+                <div class="_form">
+                  <label class="text" for="Adults">Adults:</label>
+                  <div class="input">
+                    <input
+                      type="number"
+                      min="1"
+                      name="adults"
+                      style="width: 250%"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="_form">
+                  <label class="text" for="Name">Name:</label>
+                  <div class="input">
+                    <input
+                      type="text"
+                      name="name"
+                      style="width: 250%"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="_form">
+                  <label class="text" for="From date">From Date:</label>
+                  <div class="input">
+                    <input
+                      type="date"
+                      name="from date"
+                      style="width: 250%"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="_form">
+                  <label class="text" for="To date">To Date:</label>
+                  <div class="input">
+                    <input
+                      type="date"
+                      name="last date"
+                      style="width: 250%"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="_form">
+                  <label class="text" for="Total">Total:</label>
+                  <div class="input">
+                    <input
+                      type="number"
+                      name="price"
+                      disabled
+                      style="background-color: white; width: 250%"
+                    />
+                  </div>
+                </div>
+                <div style="float: right">
+                  <button>Book Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="div1">
+            <h2>Radisson Blu Hotel</h2>
+            <p class="_text">RATING</p>
+            <p>5 Star</p>
+            <p class="_text">AMENITIES</p>
+            <ul>
+              <li>Room Service</li>
+              <li>Restaurant</li>
+              <li>Business Center</li>
+              <li>Fitness Center</li>
+              <li>Pool</li>
+            </ul>
+            <div>
+              <h5 class="_text">DESCRIPTION</h5>
+
+              <p>
+                A hotel is an establishment that provides paid lodging on a
+                short-term basis.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <footer>
+        <div class="contact">
+          <a href="contact.html" target="_self" class="us"
+            ><span>Contact Us</span></a
+          >
+        </div>
+
+        <div class="footerline">
+          <span> &copy 2021 ROOM SEARCH PVT LTD</span>
+        </div>
+        <div class="socialicons">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="assests/images/facebook.png"
+              alt="facebook"
+              id="socialsites"
+          /></a>
+
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              src="assests/images/instagram.png"
+              alt="instagram"
+              id="socialsites"
+          /></a>
+          <a href="https://twitter.com" target="_blank"
+            ><img
+              src="assests/images/twitter.png"
+              alt="twitter"
+              id="socialsites"
+          /></a>
+        </div>
+      </footer>
     </div>
-    <div class="copyright">
-       <span>&copy; 2020 ROOM SEARCH PVT LTD.</span>
-    </div>
-    <div class="social">
-        <a href="https://www.facebook.com" target="_blank"><img id="social-media-img" src="assests/images/facebook.png"></a>
-
-        <a href="https://www.instagram.com" target="_blank"><img id="social-media-img" src="assests/images/instagram.png"></a>
-
-        <a href="https://twitter.com" target="_blank"><img id="social-media-img" src="assests/images/twitter.png"></a>
-    </div></footer>
-
-</body>
+  </body>
 </html>
-
     </body>
 </html>

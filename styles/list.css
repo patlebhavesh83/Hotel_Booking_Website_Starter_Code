@@ -1,109 +1,38 @@
-html,body{
-    height: 100%;
-    width: 100%;
-   
-   
-}
-body{
-    background-color: #e0e0e0;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    position: relative;
-    margin: 0px;
-    font-family: 'Ubuntu',sans-serif;
-}
-#logo{
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 0 auto;
-}
-#login{
-    float: right;
-   line-height: 60px;
-   padding-right:20px ;
-    text-decoration: none;
+.listmap {
     color: black;
-
-}
-#hotel1{
-    display: flex;
-    
-}
-.hotel-img{
+    text-decoration: none;
+    padding: 20px;
+  }
+  
+  ._img {
     height: 200px;
     width: 250px;
-}
-#social-media-img{
-    height: 20px;
-    width: 22px;
-    padding-top: 22px;
-    margin-right: 5px;
-}
-.social{
-    text-align:  right;
-    width: 33%;
-}
-.header{
-    background-color: rosybrown;
-    width: 100%;
-    top: 0px;
-    position: fixed
-}
-.footer{
-    background-color: rosybrown;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.hotel-img-style{
-    margin: 2%;
-    background-color: rgb(132,136, 139);
-    width: 40%;
-    
-}
-.contact{
-    
-    margin-left: 10px;
-}
-#us{
-    text-decoration: none;
-    color: black;
-}
-.copyright{
+  }
   
-    font-size: 10px;
-    margin-top: 45px;
-    margin-left: 300px;
-
-}
-.list-view{
-   
-text-align: center;
-   margin-left: 21px;
-   justify-content: space-between;
-}
-#list{
-    text-decoration: none;
-    color: black;
-    font: bolder;
-}
-#map{
-    margin-left: 50px;
-    text-decoration: none;
-    color: black;
-    font: bolder;
-}
- #radisson{
-  text-decoration: none;
-}
-#lalit{
-    font: bolder;
-}
-#lalit{
-    font: bolder;
-}
+  .image-container {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .image_container {
+    margin-top: 50px;
+    display: flex;
+  }
+  .content {
+    background-color: lightgrey;
+    width: 40%;
+    margin-right: 65px;
+    margin-left: 54px;
+    display: flex;
+  }
+  
+  ._content {
+    background-color: lightgrey;
+    width: 40%;
+    margin-left: 72px;
+    display: flex;
+  }
+  .sentence {
+    margin-left: 25px;
+  }
