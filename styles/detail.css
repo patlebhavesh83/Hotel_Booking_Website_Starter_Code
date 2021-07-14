@@ -15,24 +15,27 @@
   border-right: 1px solid black;
   padding: 16px;
 }
-
+#booking-form {
+  margin-right: 2%;
+  flex-grow: 1;
+}
+.outer {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+#book-now {
+  margin-top: 5%;
+  margin-left: 38%;
+}
+.inner {
+  width: 60%;
+}
 .checked {
   color: orange;
 }
 ._text {
   font-family: cursive;
-}
-.text {
-  width: 40%;
-}
-.input {
-  width: 60%;
-}
-._form {
-  display: flex;
-  margin-bottom: 31px;
-  margin-right: 3em;
-  width: 100%;
 }
 /* Media Query */
 
@@ -40,7 +43,7 @@
  .col-4{
    width: 100% !important;
  }
- #_btn{
+ #book-now{
   margin-bottom: 20px;
  }
  #text1{
@@ -56,6 +59,7 @@
  }
  #previous{
    margin-left: -13px !important;
+   z-index: 0;
  }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {

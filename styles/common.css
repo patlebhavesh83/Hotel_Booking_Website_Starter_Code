@@ -2,26 +2,63 @@
   padding-bottom: 80px;
   overflow-x: hidden;
   background-color: #e0e0e0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+* {
+  font-family: 'Ubuntu', sans-serif;
 }
 html {
   height: 100%;
-}
-.navbar-light {
-  background-color: rosybrown;
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+  margin: 0;
 }
-.btn-light {
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-right: 25px;
-}
-#logo {
-  height: 60px;
+#logo-image {
+  height: 100%;
   width: 60px;
+}
+.logo {
   margin-left: 1%;
+}
+#login{
+  margin-right: 2%;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-field {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
+}
+#login-button {
+  margin: auto;
+}
+header{
+  background-color:rosybrown;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact {
+  margin-left: 2%;
+}
+#social-media-images {
+  margin-right: 2%;
+}
+#copyright-text {
+  font-size: 10px;
+}
+.social-media-image {
+  height: 20px;
+  width: 22px;
 }
 footer {
   background-color: rosybrown;
@@ -30,64 +67,17 @@ footer {
   bottom: 0;
   height: 60px;
   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
 }
-.button {
-  margin-top: 12px;
-  width: 33.3%;
-  margin-left: 24px;
+.modal-backdrop.show {
+  opacity: 0 !important;
 }
-
-.footerline {
-  margin-top: 25px;
-  font-size: 10px;
-  text-align: center;
-  width: 33.3%;
-}
-.socialicons {
-  width: 33.3%;
-  text-align: right;
-  margin-right: 2%;
-}
-#socialsites {
-  width: 22px;
-  padding-top: 22px;
-  margin-right: 1px;
+.modal-backdrop{
+  position: unset !important;
 }
 
-.btn {
-  float: none;
-  
-}
 #btn1{
   color: white;
-}
-.login-btn {
-  float: right;
-}
-#_us {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-#modal-footer {
-  justify-content: center;
-  padding-bottom: 0em;
-}
-#form1{
-  margin-bottom: 2em;
-   margin-left: 4em;
-}
-/* Media query */
-
-@media only screen and (max-width: 576px) {
- #line{
-  width: 100% !important;
-  margin-left: 6em;
-  margin-top: -24px;
- }
- .line{
-  margin-left: 85px !important;
- }
- #_line{
-  width: 5%;
- }
 }

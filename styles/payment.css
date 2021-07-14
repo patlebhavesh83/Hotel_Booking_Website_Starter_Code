@@ -32,7 +32,7 @@
 #_width {
   margin-top: 25px;
 }
-#_pay {
+#pay-now {
   margin-top: 65px;
 }
 
@@ -52,16 +52,17 @@
     text-align: center;
     display: contents;
   }
+  .div2{
+    padding-bottom: 50px;
+  }
   ._text {
-    margin: 0;
     display: block;
-    padding: 0;
   }
   .width {
     margin-left: 1em;
     width: 100%;
   }
-  #_pay {
+  #pay-now{
     margin-top: 40px;
     margin-bottom: 25px;
     text-align: center;
@@ -80,7 +81,7 @@
   #_width {
     padding-left: 15px;
   }
-  #_pay {
+  #pay-now {
     text-align: end;
   }
 }
