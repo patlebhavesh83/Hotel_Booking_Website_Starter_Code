@@ -1,63 +1,81 @@
 #searchbar {
-    background-color: #f1f1f1;
-    border: 1px solid transparent;
-    border-radius: 12px;
-    top: 50%;
-    left: 1%;
-    position: relative;
-    padding: 10px;
-    font-size: 16px;
-    width: 29%;
-  }
-  #searchbar:focus {
-    outline: none;
-  }
-  #_img {
-    height: 150px;
-    width: 150px;
-    border-radius: 25%;
-    box-shadow: 10px 10px 10px grey;
-  }
-  
-  .container1 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-  }
-  .images {
-    opacity: 1;
-    display: flex;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
-  }
-  .middle {
-    transition: 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  .container:hover .images {
-    opacity: 0.5;
-  }
-  .container:hover .middle {
-    opacity: 1;
-  }
-  .div1 {
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-    height: 380px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
-  }
-  .center {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  top: 50%;
+  left: 1%;
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  width: 29%;
+}
+#searchbar:focus {
+  outline: none;
+}
+#_img {
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+.grid-container {
+  padding-top: 50px;
+  text-align: center;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+}
+.citycard:hover .middle {
+  opacity: 1;
+}
+.citycard:hover #_img {
+  opacity: 0.5;
+}
+.div1 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+  height: 380px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.row{
+  margin-right: 0 !important;
+}
+.text {
+  color: white;
+  margin-left: 9.5rem;
+  transform: translate(-50%, -50%);
+  margin-top: -70px;
+}
+/* Media query */
+
+@media only screen and (max-width: 576px) {
+  .citycard {
+    padding-bottom: 30px;
   }
   .text {
-    color: black;
-    margin-top: -5em;
-    margin-left: 9.5em;
+    color: white;
+    margin-left: 13.5em;
   }
+
+  #row1 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .citycard {
+    padding-bottom: 30px;
+  }
+  .text {
+    color: white;
+    margin-left: 8.5em;
+  }
+}

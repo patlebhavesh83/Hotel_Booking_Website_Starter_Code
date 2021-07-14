@@ -1,31 +1,22 @@
-body {
-  margin: 0px;
-  background-color: #e0e0e0;
-  font-family: "Ubuntu", sans-serif;
-  padding-top: 60px;
+.body {
   padding-bottom: 80px;
-  position: relative;
   overflow-x: hidden;
+  background-color: #e0e0e0;
 }
 html {
   height: 100%;
 }
-header {
+.navbar-light {
   background-color: rosybrown;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-#login {
-  color: black;
-  line-height: 60px;
-  margin-right: 2%;
-  text-decoration: none;
+.btn-light {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 #logo {
   height: 60px;
@@ -40,30 +31,63 @@ footer {
   height: 60px;
   display: flex;
 }
-.contact {
-  width: 33%;
-  padding-top: 22px;
-  margin-left: 2%;
-}
-.us {
-  text-decoration: none;
-  color: black;
+.button {
+  margin-top: 12px;
+  width: 33.3%;
+  margin-left: 24px;
 }
 
 .footerline {
-  width: 33%;
-  text-align: center;
   margin-top: 25px;
   font-size: 10px;
+  text-align: center;
+  width: 33.3%;
 }
 .socialicons {
-  width: 33%;
+  width: 33.3%;
   text-align: right;
-  margin-right: 1%;
+  margin-right: 2%;
 }
 #socialsites {
-  height: 20px;
   width: 22px;
   padding-top: 22px;
   margin-right: 1px;
+}
+
+.btn {
+  float: none;
+  
+}
+#btn1{
+  color: white;
+}
+.login-btn {
+  float: right;
+}
+#_us {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+#modal-footer {
+  justify-content: center;
+  padding-bottom: 0em;
+}
+#form1{
+  margin-bottom: 2em;
+   margin-left: 4em;
+}
+/* Media query */
+
+@media only screen and (max-width: 576px) {
+ #line{
+  width: 100% !important;
+  margin-left: 6em;
+  margin-top: -24px;
+ }
+ .line{
+  margin-left: 85px !important;
+ }
+ #_line{
+  width: 5%;
+ }
 }

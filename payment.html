@@ -8,33 +8,58 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="undefined"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
+  <body class="body">
     <div>
       <header>
-        <div class="header">
-          <a href="index.html"
-            ><img src="assests/images/logo.png" id="logo"
-          /></a>
+        <nav class="navbar-light">
+          <div>
+            <a href="/index.html">
+              <img src="assests/images/logo.png" id="logo"
+            /></a>
 
-          <a href="login.html" target="_self" id="login"><span>Login</span></a>
-        </div>
+            <button
+              type="button"
+              class="btn btn-light login-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+          </div>
+        </nav>
       </header>
       <article>
-        <section class="conatiner">
-          <div class="div1">
+        <section>
+          <div id="div1">
+          <div class="div1" id="_div1">
             <img
               src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
               id="_img"
             />
-            <div class="text">
+            <div class="text" id="text">
               <h2>Radisson Blu Hotel</h2>
               <p>#38 of 1,289 hotels in New Delhi</p>
               <p>National Highway 8, New Delhi 110017 India</p>
             </div>
           </div>
-          <div class="_text">
+        </div>
+        
+        <div class="_text">
             <div class="width">
               <p><b>Name:</b> John Doe</p>
               <p><b>Number of Adults :</b> 2</p>
@@ -46,16 +71,28 @@
               <p><b>Total Amount:</b> Rs 10000</p>
             </div>
             <div class="width" id="_pay">
-              <a href="#" target="_self" class="pay"><span>Pay Now</span></a>
+              <button
+                type="button"
+                class="btn btn-success"
+                style="margin-top: -1em"
+              >
+                Pay Now
+              </button>
             </div>
           </div>
+        
         </section>
       </article>
       <footer>
-        <div class="contact">
-          <a href="contact.html" target="_self" class="us"
-            ><span>Contact Us</span></a
+        <div class="button">
+          <button
+            class="btn btn-info"
+            data-bs-toggle="modal"
+            data-bs-target="#example"
+            id="btn1"
           >
+            Contact Us
+          </button>
         </div>
 
         <div class="footerline">
@@ -86,3 +123,121 @@
     </div>
   </body>
 </html>
+
+<!-- Login modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5
+          class="modal-title"
+          id="exampleModalLabel"
+          style="font-family: Ubuntu, sans-serif; font-weight: bold"
+        >
+          Please Login
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="index.html" method="GET" target="_self">
+          <div class="form-group row" id="form1">
+            <label for="username" class="col-sm-2" id="_line">Username:</label>
+            <div style="width: 50%">
+              <input
+                type="text"
+                id="form"
+                id="username"
+                placeholder="Enter Username"
+                style="margin-left: 3em"
+                required
+              />
+            </div>
+          </div>
+          <div
+            class="form-group row"
+            style="margin-left: 4em; margin-bottom: 16px"
+          >
+            <label for="inputPassword3" class="col-sm-2" id="_line"> Password:</label>
+            <div style="width: 50%">
+              <input
+                type="password"
+                id="form"
+                id="inputPassword3"
+                placeholder="Enter Password"
+                style="margin-left: 3em"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal-footer" id="modal-footer">
+            <button onclick="login" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact us -->
+<div
+  class="modal fade"
+  id="example"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5
+          class="modal-title"
+          id="exampleModalLabel"
+          style="font-family: Ubuntu, sans-serif; font-weight: bold"
+        >
+          Get in touch
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="index.html" method="GET" target="_self">
+          <div>Thank you for reaching out!!</div>
+          <div>Please enter your email and we will get back to you.</div>
+          <div class="form-group row" id="_us">
+            <label for="inputEmail3" class="col-sm-2">Email:</label>
+            <div class="col-sm-10" id="line">
+              <input
+                type="email"
+                id="form"
+                id="inputEmail3"
+                placeholder="Enter your email id"
+                style="width: 60%; margin-left: -2em"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
