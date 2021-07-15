@@ -1,23 +1,33 @@
-.div1 {
-  padding-left: 18px;
-}
-#_img {
-  width: 500px;
-  height: 350px;
-}
-#row {
+#slideshow-container, #booking-form {
+  padding: 1%;
+  text-align: center;
   border: 1px solid black;
-  margin-top: 80px !important;
-  width: 97%;
-  margin: auto;
+  max-height: 400px;
 }
-#text1 {
-  border-right: 1px solid black;
-  padding: 16px;
+#slideshow-container {
+  margin-left: 2%;
+  border-right: none;
+  flex-grow: 3;
+  max-width: 60%;
 }
 #booking-form {
   margin-right: 2%;
   flex-grow: 1;
+}
+#hotel-description {
+  margin: 2%;
+}
+#detail-container {
+  margin-top:7%;
+  margin-bottom: 7%;
+}
+#slideshow-booking {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.slider-image {
+  max-height: 350px;
 }
 .outer {
   padding: 3%;
@@ -26,52 +36,65 @@
 }
 #book-now {
   margin-top: 5%;
-  margin-left: 38%;
 }
 .inner {
   width: 60%;
 }
-.checked {
-  color: orange;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+height: 100px;
+width: 100px;
+background-image: none !important;
 }
-._text {
-  font-family: cursive;
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 55px;
+color: black;
 }
-/* Media Query */
 
-@media only screen and (max-width: 576px) {
- .col-4{
-   width: 100% !important;
- }
- #book-now{
-  margin-bottom: 20px;
- }
- #text1{
-  border-bottom: 1px solid;
-  border-right: 0 !important;
-  width: 100%;
- }
- .slide{
-  width: 100% !important;
- }
- #next{
-  left: 21em;
- }
- #previous{
-   margin-left: -13px !important;
-   z-index: 0;
- }
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 55px;
+color: black;
 }
-@media only screen and (min-width: 576px) and (max-width: 768px) {
- #next{
-  left: 21em;
- }
- #previous{
-   margin-left: -13px !important;
- }
 
- .slide{
-width: 100% !important;
- }
- 
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 0 !important;
+}
+.carousel-image {
+  max-height: 370px;
+}
+
+@media screen and (max-width: 576px) {
+
+  #slideshow-container {
+      margin-left: 0%;
+      max-width: 100%;
+      border-right: 1px solid black;
+  }
+
+  #booking-form {
+      width: 100%;
+  }
+
+  #detail-container {
+      margin-top: 20%;
+      margin-bottom: 22%;
+  }
+
+  #slideshow-booking {
+      flex-direction: column;
+  }
+
+  .slider-image {
+      max-height: 250px;
+      width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #detail-container {
+      margin-top: 10%;
+  }
 }

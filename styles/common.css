@@ -1,18 +1,18 @@
-.body {
-  padding-bottom: 80px;
-  overflow-x: hidden;
-  background-color: #e0e0e0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
 * {
   font-family: 'Ubuntu', sans-serif;
 }
-html {
+.body {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-color: #e0e0e0;  
+}
+a {
+  color: black !important;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
 }
 #logo-image {
   height: 100%;
@@ -21,8 +21,50 @@ html {
 .logo {
   margin-left: 1%;
 }
-#login{
+.social-media-image {
+  height: 20px;
+  width: 22px;
+}
+.header-footer {
+  background-color:rosybrown;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  top: 0;  
+}
+footer {
+  padding:0.7%;
+  bottom: 0;
+}
+#login {
   margin-right: 2%;
+}
+#contact {
+  margin-left: 2%;
+}
+#social-media-images {
+  margin-right: 2%;
+}
+#copyright-text {
+  font-size: 10px;
+}
+.hotel-name-rating {
+  padding: 3% 3% !important;
+}
+.modal-backdrop.show{
+  opacity: 0 !important;
+}
+.modal-backdrop{
+  position: unset !important;
+}
+.heading {
+  font-family: cursive !important;
+  margin-top: 1%;
 }
 #login-form {
   display: flex;
@@ -37,47 +79,6 @@ html {
 #login-button {
   margin: auto;
 }
-header{
-  background-color:rosybrown;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#contact {
-  margin-left: 2%;
-}
-#social-media-images {
-  margin-right: 2%;
-}
-#copyright-text {
-  font-size: 10px;
-}
-.social-media-image {
-  height: 20px;
-  width: 22px;
-}
-footer {
-  background-color: rosybrown;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  height: 60px;
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-}
-.modal-backdrop.show {
-  opacity: 0 !important;
-}
-.modal-backdrop{
-  position: unset !important;
-}
-
-#btn1{
-  color: white;
+.checked {
+  color: orange;
 }

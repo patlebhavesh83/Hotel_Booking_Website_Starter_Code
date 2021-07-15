@@ -1,87 +1,63 @@
-#_img {
-  height: 200px;
-  width: 250px;
-}
-.div1 {
+#hotel-details {
   background-color: rgb(132, 136, 139);
+  width: 60%;
+  height: 20%;
+  margin: 2% auto;
   display: flex;
-  width: 50%;
-  margin: auto;
-  margin-top: 7.5em;
-  margin-bottom: 20px;
+  align-items: center;
 }
-.text {
-  margin-left: 25px;
-  margin-top: 30px;
+#payment-container {
+  margin-top:7%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-._text {
-  padding: 12px;
-  border: 1px solid black;
+.hotel-image {
+  max-height: 300px;
+  max-width: 270px;
+}
+#customer-payment-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  border: black 1px solid;
   border-radius: 5px;
-  display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10em;
+  margin: 0% 2%;
   background-color: rosybrown;
 }
-.width {
-  width: 33.3%;
-  font-family: cursive;
-  margin-left: 5em;
-}
-#_width {
-  margin-top: 25px;
-}
-#pay-now {
-  margin-top: 65px;
-}
+@media screen and (max-width: 576px) {
+  #hotel-details {
+      width: 100%;
+      flex-direction: column;
+      padding-top: 10px;
+  }
 
-/* Media query */
+  #payment-container {
+      margin-top: 20%;
+      margin-bottom: 20%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
 
-@media only screen and (max-width: 576px) {
-  
-  #_div1 {
-    display: block;
-    margin-top: 76px;
-  }
-  #div1 {
-    display: block;
-    background-color: rgb(132, 136, 139);
-  }
-  #text {
-    text-align: center;
-    display: contents;
-  }
-  .div2{
-    padding-bottom: 50px;
-  }
-  ._text {
-    display: block;
-  }
-  .width {
-    margin-left: 1em;
-    width: 100%;
-  }
   #pay-now{
-    margin-top: 40px;
-    margin-bottom: 25px;
-    text-align: center;
+      align-self: center;
+  }
+
+  #customer-payment-details {
+      align-items: normal;
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .hotel-name-rating {
+      text-align: center;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-  
-
-  .div1 {
-    display: flex;
-    width: 95%;
-  }
-  .width {
-    margin: 0;
-  }
-  #_width {
-    padding-left: 15px;
-  }
-  #pay-now {
-    text-align: end;
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #hotel-details {
+      width: 80%;
+      margin: 5% auto;
   }
 }
